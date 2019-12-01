@@ -34,3 +34,9 @@ $("#calendar").MEC({
   events: sampleEvents,
   from_monday: true
 });
+
+
+$('#enter_btn').click((e)=>{
+  e.preventDefault();
+  $('#form-modal').modal('show');
+})

@@ -6,7 +6,8 @@
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
  <link rel="stylesheet" href="Style.css">
  <link rel="stylesheet" href="src/mini-event-calendar/src/mini-event-calendar.min.css">
-<title>MAIB</title>
+ <link rel="shortcut icon" href="favicon.ico">
+<title>Международная Ассоциация Исламского Бизнеса</title>
 </head>
 	<body>
 		<div class="container-fluid" id="start_screen">
@@ -84,9 +85,9 @@
                     </div>
                     
                     <div class="pull-right social_wrapper pr-5">
-                        <span><i class="fa fa-instagram py-4 insta_ref"></i></span>
-                        <span class="justify-content-center"><i class="fa fa-facebook  py-4 fb_ref justify-content-end">      </i></span>
-                        <span><i class="fa fa-youtube-play  py-4 ytube_ref"></i></span>
+                        <a href="https://www.instagram.com/businessclubiaib" target="_blank"><span class="social-wrap insta-wrap"><i class="fa fa-instagram py-4 social-icon"></i></span></a>
+                        <a href="https://web.facebook.com/businessclubiaib" target="_blank"><span class="social-wrap fb-wrap"><i class="fa fa-facebook  py-4 social-icon justify-content-end"></i></span></a>
+                        <a href="https://clck.ru/JogCf" target="_blank"><span class="social-wrap ytube-wrap"><i class="fa fa-youtube-play  py-4 social-icon"></i></span></a>
                 	</div>
                     
                 </div>
@@ -94,7 +95,6 @@
                 
             </div>     
         </div>
-
 
  		<div class="container">
         	<div class="row position-relative">
@@ -114,7 +114,7 @@
                     
                    
                 </div>
-                	<img src="Images/pictvideo.png" class="img-fluid img_static">
+                	<a href="#" class="video1-btn"><img src="Images/pictvideo.png" class="img-fluid img_static"></a>
 				</div>   	
         </div>
 
@@ -242,11 +242,11 @@
                         </div>
                         <div class="col text-center">
                     		<img src="Images/smile2.png" class="img-fluid">
-                            <p class=" color_custom pt-0">95%</p>
+                            <p class=" color_custom pt-0">9%</p>
                         </div>
                         <div class="col text-center">
                     		<img src="Images/smile3.png" class="img-fluid">
-                            <p class=" color_custom pt-0">95%</p>
+                            <p class=" color_custom pt-0">1%</p>
                         </div>
                     </div>
                 </div>
@@ -619,22 +619,23 @@
       						<input type="text" class="form-control custom_input" id="inputName" placeholder="ИМЯ">
     					</div>
     					<div class="form-group col-3">
-      						<input type="tel" class="form-control custom_input" id="inputPhone" placeholder="ТЕЛЕФОН" autofocus>
+      						<input type="tel" class="form-control custom_input" id="inputPhone" placeholder="ТЕЛЕФОН">
     					</div>
                         <div class="form-group col-3">
       						<input type="email" class="form-control custom_input" id="inputEmail" placeholder="ПОЧТА">
     					</div>
                         <div class="col-3 px-4">
-                         	<div type="submit" class="btn_form py-2 pl-2"> ОТПРАВИТЬ</div>
+                         	<button type="submit" class="btn_form py-2 pl-2">
+								 ОТПРАВИТЬ
+								 <i class="ml-2 pr-2 fa fa-caret-right"></i>
+							</button>
                          </div>
                     </form>
                	 </div>            
              </div>
          </div>
  		</div>
- 		
-        
-        
+
         <div class="container-fluid footer_wrapper pt-5">
         	<div class="row">
             	<div class="container">
@@ -643,16 +644,16 @@
                         	<img src="Images/Logo.png" class="img-fluid">
         				</div>
                         <div class="col-1 offset-1 pt-2 text-uppercase ">
-                        	О НАС
+                        	<a href=#>О нас</a>
         				</div>
                         <div class="col-1 text-uppercase text-center pt-2">
-                        	ЧЛЕНСТВО
+							<a href=#>Членство</a>
         				</div>
                         <div class="col-2 px-2 text-uppercase text-center pt-2 text-white">
-                        	КРИТЕРИИ ВСТУПЛЕНИЯ
+							<a href=#>Критерии вступления</a>
         				</div>
                         <div class="col-1 text-uppercase text-center pt-2">
-                        	контакты
+							<a href=#>Контакты</a>
         				</div>
                         <div class="col-1 text-uppercase text-right pr-0">
                         	<img src="Images/phoneimg.png "> 
@@ -672,7 +673,7 @@
                         	© БИЗНЕС КЛУБ МАИБ 2019. Все права защищены.
         				</div>
                     	 <div class="col-4  pt-2 text-white">
-                        	Политика конфиденциальности и оферта
+                        	<a href=#>Политика конфиденциальности и оферта</a>
         				</div>
                         <div class="col-4  pt-2 text-white text-right">
                         	Разработано в
@@ -682,7 +683,177 @@
                 </div>
             </div>
         </div>
-                
+
+		<div id="form-modal" class="modal bd-example-modal-lg" tabindex="-1" role="dialog">
+				<div class="modal-dialog modal-lg" role="document">
+				  <div class="modal-content">
+					<div class="modal-header">
+					  <h5 class="modal-title">
+						  Заявка на вступление в клуб
+						  <div class="pb-1"><div class="maib_line bg-white m-0"></div></div>
+						</h5>
+					  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					  </button>
+					</div>
+					<div class="modal-body">
+						<div class="input-wrap">
+							<input type="text" name="fio" id="fio" placeholder=" ">
+							<label for="fio">ФИО</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="education" id="education" placeholder=" ">
+							<label for="education">Образование</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="hobby" id="hobby" placeholder=" ">
+							<label for="hobby">Хобби, увлечения</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="position" id="position" placeholder=" ">
+							<label for="position">Должность, статус</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="company" id="company" placeholder=" ">
+							<label for="company">Компания</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="company-site" id="company-site" placeholder=" ">
+							<label for="company-site">Сайт компании</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="business" id="business" placeholder=" ">
+							<label for="business">Сфера бизнеса, виды деятельности</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="annual-profit" id="annual-profit" placeholder=" ">
+							<label for="annual-profit">Годовой оборот компании</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="company-geo" id="company-geo" placeholder=" ">
+							<label for="company-geo">География международной представленности компании (Существующая и планы на 3 года)</label>
+						</div>
+						<div class="input-wrap">
+							<input type="email" name="email" id="email" placeholder=" ">
+							<label for="email">Эл. почта</label>
+						</div>
+						<div class="input-wrap">
+							<input type="tel" name="phone" id="phone" placeholder=" ">
+							<label for="phone">Номер телефона</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="social-link" id="social-link" placeholder=" ">
+							<label for="social-link">Ссылки на соц. сети</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="helper-link" id="helper-link" placeholder=" ">
+							<label for="helper-link">Контакты помощника</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="motivation" id="motivation" placeholder=" ">
+							<label for="motivation">Мотивы, цели и задачи пребывания в клубе?</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="buisness-tasks" id="buisness-tasks" placeholder=" ">
+							<label for="buisness-tasks">Какие бинес-задачи на ближайший год?</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="usefulness" id="usefulness" placeholder=" ">
+							<label for="usefulness">В чем ваша полезность для членов клуба?</label>
+						</div>
+						<div class="input-wrap">
+							<input type="text" name="privilege" id="privilege" placeholder=" ">
+							<label for="privilege">Какие привелегии, бонусы и скидки можете дать для членов клуба?</label>
+						</div>
+					</div>
+					<div class="middle-section">
+							Даю согласие на обработку персональных данных и получение информации по:
+							
+							<div class="my-4">
+							<div class="cbx-wrap">
+								<input class="inp-cbx" name="whatsapp-cbx" id="whatsapp-cbx" type="checkbox" style="display: none;">
+								<label class="cbx" for="whatsapp-cbx">
+									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
+										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+									</svg></span>
+									<img src="/Images/modal-whatsapp.png" alt="Whatsapp"/>
+									<span>Whats App</span>
+								</label>
+							</div>
+							<div class="cbx-wrap">
+								<input class="inp-cbx" name="tg-cbx" id="tg-cbx" type="checkbox" style="display: none;">
+								<label class="cbx" for="tg-cbx">
+									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
+										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+									</svg></span>
+									<img src="/Images/modal-tg.png" alt="Telegram"/>
+									<span>Telegram</span>
+								</label>
+							</div>
+							<div class="cbx-wrap">
+								<input class="inp-cbx" name="email-cbx" id="email-cbx" type="checkbox" style="display: none;">
+								<label class="cbx" for="email-cbx">
+									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
+										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+									</svg></span>
+									<img src="/Images/modal-email.png" alt="Email"/>
+									<span>E-mail</span>
+								</label>
+							</div>
+							<div class="cbx-wrap">
+								<input class="inp-cbx" name="phone-cbx" id="phone-cbx" type="checkbox" style="display: none;">
+								<label class="cbx" for="phone-cbx">
+									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
+										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+									</svg></span>
+									<img src="/Images/modal-call.png" alt="Call"/>
+									<span>Звонок</span>
+								</label>
+							</div>
+							<div class="cbx-wrap">
+								<input class="inp-cbx" name="any-cbx" id="any-cbx" type="checkbox" style="display: none;">
+								<label class="cbx" for="any-cbx">
+									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
+											<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+									</svg></span>
+									<span>Не принципиально</span>
+								</label>
+							</div>
+						</div>
+
+							<div class=time-wrap>
+								Укажите время, удобное Вам для связи по телефону
+								<div class="input-wrap">
+									<input class="call-time" name="call-time" placeholder="00:00" >
+								</div>
+								<button id=addFile class="btn_form py-2 pl-2"><img class="mr-1" src="/Images/modal-clip.png"/>Прикрепить к анкете</button>
+								<input type="file" name="file" style="display: none;" />
+							</div>
+						</div>
+					<div class="modal-footer">
+					  	<div>
+							<input class="inp-cbx" name="business-moral" id="business-moral" type="checkbox" style="display: none;">
+							<label class="cbx" for="business-moral">
+								<span><svg width="12px" height="10px" viewBox="0 0 12 10">
+										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+								</svg></span>
+								<span>Бизнес соответствует<br>нормам этики и морали</span>
+							</label>
+						</div>
+						<div>
+							<input class="inp-cbx" name="rules-agreed" id="rules-agreed" type="checkbox" style="display: none;">
+							<label class="cbx" for="rules-agreed">
+								<span><svg width="12px" height="10px" viewBox="0 0 12 10">
+										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+								</svg></span>
+								<span>Ознакомлен со <a href=# class=firm-link>сводом правил<br> членства и резиденства</a> в клубе</span>
+							</label>
+						</div>
+						<button type="submit" class="btn_form py-2 pl-2">ОТПРАВИТЬ</button>
+					</div>
+				  </div>
+				</div>
+			  </div>
             
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 		crossorigin="anonymous">
     </script>
