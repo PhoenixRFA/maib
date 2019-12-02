@@ -1,11 +1,15 @@
 $(document).ready(function () {
 
+  $('#enter_btn').click((e)=>{
+    e.preventDefault();
+    $('#form-modal').modal('show');
+  })
+
   $(document).on('click', '#sendForm', function(e){
     e.preventDefault();
     var formData = new FormData($('#main-form')[0]);
     var object = {};
     formData.forEach((value, key) => {object[key] = value});
-    console.log(object);
     $.ajax({
       url: 'https://dev.c-rb.com/home/HandleMIABForm',
       dataType: 'jsonp',
