@@ -27,18 +27,23 @@ $(document).ready(function () {
 
 var sampleEvents = [
     {
-      title: "Soulful sundays bay area",
-      date: new Date().setDate(new Date().getDate() - 7), // last week
+      title: "forum",
+      date:  Date.parse( new Date(2019, 10, 2)),
       link: "#"
     },
-    {
-      title: "London Comicon",
-      date: new Date().getTime(), // today
+	 {
+      title: "forum",
+      date:  new Date(2019, 10, 14), // last week
       link: "#"
     },
-    {
-      title: "Youth Athletic Camp",
-      date: new Date().setDate(new Date().getDate() + 31), // next month
+	 {
+      title: "forum",
+      date:  new Date(2019, 10, 19), // last week
+      link: "#"
+    },
+	 {
+      title: "forum",
+      date: new Date(2019, 10, 29), // last week
       link: "#"
     }
 ];
@@ -52,8 +57,3 @@ $("#calendar").MEC({
   from_monday: true
 });
 
-
-$('#enter_btn').click((e)=>{
-  e.preventDefault();
-  $('#form-modal').modal('show');
-})
