@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-  $('#enter_btn').click((e)=>{
+  $('#enter_btn, .fill-profile-btn').click((e)=>{
     e.preventDefault();
     $('#form-modal').modal('show');
   })

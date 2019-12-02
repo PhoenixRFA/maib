@@ -68,6 +68,7 @@ button{
 	font-weight:bold;
 	line-height:1;
 }
+
 @media (max-width: 544px){
 .main_title{
 	font-size:2rem;
@@ -93,7 +94,25 @@ p{
 	
 .social_wrapper{
 	padding-right:0 !important;
-	
+	}
+
+}
+
+@media (min-width: 576px){
+	.social_wrapper {
+		padding-left: 206px !important;
+	}
+	.header-right-column {
+		padding-left: 0 !important;
+	}
+	.mail_text {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 1200px){
+	.membersheep_wrapper img {
+		margin: auto;
 	}
 }
 
@@ -719,4 +738,13 @@ button#enter_btn {
 }
 #monthYear{
 	margin-bottom:0;
+}
+
+.fill-profile-btn {
+    color: #fff;
+    text-decoration: underline;
+}
+.fill-profile-btn:hover {
+	text-decoration: none;
+    color: #fff;	
 }
