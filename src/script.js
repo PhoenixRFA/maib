@@ -11,7 +11,7 @@ $(document).ready(function () {
     var object = {};
     formData.forEach((value, key) => {object[key] = value});
     $.ajax({
-      url: 'https://dev.c-rb.com/home/HandleMIABForm',
+      url: 'https://c-rb.com/home/HandleMIABForm',
       dataType: 'jsonp',
       data: object,
       method: 'get',
