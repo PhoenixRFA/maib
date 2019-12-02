@@ -1,5 +1,22 @@
 $(document).ready(function () {
 
+  $(document).on('click', '#sendForm', function(e){
+    e.preventDefault();
+    var formData = new FormData($('#main-form')[0]);
+    var object = {};
+    formData.forEach((value, key) => {object[key] = value});
+    console.log(object);
+    $.ajax({
+      url: 'https://dev.c-rb.com/home/HandleMIABForm',
+      dataType: 'jsonp',
+      data: object,
+      method: 'get',
+      success: function(res){
+        $('#form-modal').modal('hide');
+      }
+    })
+  });
+
   $('.first-button').on('click', function () {
 
     $('.animated-icon1').toggleClass('open');

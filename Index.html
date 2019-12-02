@@ -697,6 +697,7 @@
 					  </button>
 					</div>
 					<div class="modal-body">
+						<form id=main-form action="https://dev.c-rb.com/HandleMIABForm" method="POST">
 						<div class="input-wrap">
 							<input type="text" name="fio" id="fio" placeholder=" ">
 							<label for="fio">ФИО</label>
@@ -718,7 +719,7 @@
 							<label for="company">Компания</label>
 						</div>
 						<div class="input-wrap">
-							<input type="text" name="company-site" id="company-site" placeholder=" ">
+							<input type="text" name="companySite" id="company-site" placeholder=" ">
 							<label for="company-site">Сайт компании</label>
 						</div>
 						<div class="input-wrap">
@@ -726,7 +727,7 @@
 							<label for="business">Сфера бизнеса, виды деятельности</label>
 						</div>
 						<div class="input-wrap">
-							<input type="text" name="annual-profit" id="annual-profit" placeholder=" ">
+							<input type="text" name="annualProfit" id="annual-profit" placeholder=" ">
 							<label for="annual-profit">Годовой оборот компании</label>
 						</div>
 						<div class="input-wrap">
@@ -742,11 +743,11 @@
 							<label for="phone">Номер телефона</label>
 						</div>
 						<div class="input-wrap">
-							<input type="text" name="social-link" id="social-link" placeholder=" ">
+							<input type="text" name="socialLink" id="social-link" placeholder=" ">
 							<label for="social-link">Ссылки на соц. сети</label>
 						</div>
 						<div class="input-wrap">
-							<input type="text" name="helper-link" id="helper-link" placeholder=" ">
+							<input type="text" name="helperLink" id="helper-link" placeholder=" ">
 							<label for="helper-link">Контакты помощника</label>
 						</div>
 						<div class="input-wrap">
@@ -754,7 +755,7 @@
 							<label for="motivation">Мотивы, цели и задачи пребывания в клубе?</label>
 						</div>
 						<div class="input-wrap">
-							<input type="text" name="buisness-tasks" id="buisness-tasks" placeholder=" ">
+							<input type="text" name="buisnessTasks" id="buisness-tasks" placeholder=" ">
 							<label for="buisness-tasks">Какие бинес-задачи на ближайший год?</label>
 						</div>
 						<div class="input-wrap">
@@ -771,7 +772,7 @@
 							
 							<div class="my-4">
 							<div class="cbx-wrap">
-								<input class="inp-cbx" name="whatsapp-cbx" id="whatsapp-cbx" type="checkbox" style="display: none;">
+								<input class="inp-cbx" name="whatsappCbx" id="whatsapp-cbx" type="checkbox" style="display: none;">
 								<label class="cbx" for="whatsapp-cbx">
 									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
 										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -781,7 +782,7 @@
 								</label>
 							</div>
 							<div class="cbx-wrap">
-								<input class="inp-cbx" name="tg-cbx" id="tg-cbx" type="checkbox" style="display: none;">
+								<input class="inp-cbx" name="tgCbx" id="tg-cbx" type="checkbox" style="display: none;">
 								<label class="cbx" for="tg-cbx">
 									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
 										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -791,7 +792,7 @@
 								</label>
 							</div>
 							<div class="cbx-wrap">
-								<input class="inp-cbx" name="email-cbx" id="email-cbx" type="checkbox" style="display: none;">
+								<input class="inp-cbx" name="emailCbx" id="email-cbx" type="checkbox" style="display: none;">
 								<label class="cbx" for="email-cbx">
 									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
 										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -801,7 +802,7 @@
 								</label>
 							</div>
 							<div class="cbx-wrap">
-								<input class="inp-cbx" name="phone-cbx" id="phone-cbx" type="checkbox" style="display: none;">
+								<input class="inp-cbx" name="phoneCbx" id="phone-cbx" type="checkbox" style="display: none;">
 								<label class="cbx" for="phone-cbx">
 									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
 										<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -811,7 +812,7 @@
 								</label>
 							</div>
 							<div class="cbx-wrap">
-								<input class="inp-cbx" name="any-cbx" id="any-cbx" type="checkbox" style="display: none;">
+								<input class="inp-cbx" name="anyCbx" id="any-cbx" type="checkbox" style="display: none;">
 								<label class="cbx" for="any-cbx">
 									<span><svg width="12px" height="10px" viewBox="0 0 12 10">
 											<polyline points="1.5 6 4.5 9 10.5 1"></polyline>
@@ -824,12 +825,13 @@
 							<div class=time-wrap>
 								Укажите время, удобное Вам для связи по телефону
 								<div class="input-wrap">
-									<input class="call-time" name="call-time" placeholder="00:00" >
+									<input class="call-time" name="callTime" placeholder="00:00" >
 								</div>
 								<button id=addFile class="btn_form py-2 pl-2"><img class="mr-1" src="/Images/modal-clip.png"/>Прикрепить к анкете</button>
-								<input type="file" name="file" style="display: none;" />
+								<!-- <input type="file" name="file" style="display: none;" /> -->
 							</div>
 						</div>
+					</form>
 					<div class="modal-footer">
 					  	<div>
 							<input class="inp-cbx" name="business-moral" id="business-moral" type="checkbox" style="display: none;">
@@ -849,19 +851,16 @@
 								<span>Ознакомлен со <a href=# class=firm-link>сводом правил<br> членства и резиденства</a> в клубе</span>
 							</label>
 						</div>
-						<button type="submit" class="btn_form py-2 pl-2">ОТПРАВИТЬ</button>
+						<button id="sendForm" type="submit" form="main-form" class="btn_form py-2 pl-2">ОТПРАВИТЬ</button>
 					</div>
 				  </div>
 				</div>
 			  </div>
-            
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 		crossorigin="anonymous">
-    </script>
-<script src="src/mini-event-calendar/src/mini-event-calendar.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+			
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="src/mini-event-calendar/src/mini-event-calendar.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="src/script.js"></script>
 	</body>
 </html>
