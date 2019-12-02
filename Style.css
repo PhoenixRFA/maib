@@ -665,3 +665,40 @@ button#enter_btn {
 		max-width: 1200px;
 	}
   }
+  
+  /*календарь*/
+.a-date{
+	padding: 0.1em !important;
+
+}
+#calTFooter{
+	display:none !important;
+}
+
+#calTitle, #calTbody, #calendar {
+	background-color:inherit !important;
+}
+#calTitle {
+ display:flex;
+ justify-content:space-between;
+ -ms-align-items:center;
+ align-items:baseline !important;
+ font-size:1.12em;
+ text-align:center;
+ padding:.4em 1em;
+ padding-top:.8em
+}
+#monthYear{
+	font-size:0.8em;
+	font-weight:bold;
+}
+.month-mover{
+	background-color:inherit !important;
+}
+.month-mover svg {
+	color:#d0a266 !important;
+	padding-bottom: 0.2rem;
+}
+#monthYear{
+	margin-bottom:0;
+}

@@ -2,13 +2,13 @@
 	var calenderTpl = `
 		<div id="calTitle">
 			<button type="button" class="month-mover prev">
-				<svg fill="#FFFFFF" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+				<svg fill="#d0a266" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
 					<path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
 				</svg>
 			</button>
 			<div id="monthYear"></div>
 			<button type="button" class="month-mover next">
-				<svg fill="#FFFFFF" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
+				<svg fill="#d0a266" height="30" viewBox="0 0 24 24" width="30" xmlns="http://www.w3.org/2000/svg">
 					<path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
 				</svg>
 			</button>
@@ -22,9 +22,9 @@
 			<a href="javascript:void(0);" id="calLink">ALL EVENTS</a>
 		</div>
 	`;
-	var weekDaysFromSunday = '<div>S</div><div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div>';
-	var weekDaysFromMonday = '<div>M</div><div>T</div><div>W</div><div>T</div><div>F</div><div>S</div><div>S</div>';
-	var shortMonths = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul","Aug", "Sep", "Oct", "Nov", "Dec"];
+	var weekDaysFromSunday = '<div>ВС</div><div>ПН</div><div>ВТ</div><div>СР</div><div>ЧТ</div><div>ПТ</div><div>СБ</div>';
+	var weekDaysFromMonday = '<div>ПН</div><div>ВТ</div><div>СР</div><div>ЧТ</div><div>ПТ</div><div>СБ</div><div>ВС</div>';
+	var shortMonths = ["ЯНВАРЬ", "ФЕВРАЛЬ", "МАРТ", "АПРЕЛЬ", "МАЙ", "ИЮНЬ", "ИЮЛЬ","АВУСТ", "СЕНТЯБРЬ", "ОКТЯБРЬ", "НОЯБРЬ", "ДЕКАБРЬ"];
 
     $.fn.miniEventCalendar = $.fn.MEC = function(options) {
     	var settings = $.extend({
