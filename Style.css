@@ -1,11 +1,16 @@
 @font-face {
-    font-family: "Roboto Black";
-    src: url(Fonts/Roboto-Black.ttf);
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Regular.ttf");
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("fonts/Roboto-Black.ttf");
+    font-weight: bold;
 }
 
 body{
 	background-color:#171719;
-	font-family: "Roboto Black" !important;
+	font-family: "Roboto" !important;
 	color:#FFF;
 	font-size: 1rem;
   	font-weight: 400;
