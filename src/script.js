@@ -21,6 +21,20 @@ $(document).ready(function () {
     })
   });
 
+  $(document).on('click', '#send-form-short', function(e){
+    e.preventDefault();
+    var formData = new FormData($('#form-short')[0]);
+    var object = {};
+    formData.forEach((value, key) => {object[key] = value});
+    $.ajax({
+      url: 'https://c-rb.com/home/HandleMIABForm',
+      dataType: 'jsonp',
+      data: object,
+      method: 'get',
+      success: function(res){}
+    })
+  });
+
   $('.first-button').on('click', function () {
 
     $('.animated-icon1').toggleClass('open');
