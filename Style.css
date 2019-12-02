@@ -631,6 +631,12 @@ button#enter_btn {
 	}
   }
 
+  .fixed-width {
+	width: 40px;
+	display: inline-block;
+	text-align: center;
+  }
+
   #form-modal .modal-content {
 	  background-color: #1e1d22;
 	  background-image: url(/Images/modal-pattern.png);
