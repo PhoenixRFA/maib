@@ -277,7 +277,9 @@ transform: rotate(-135deg);
 .big_font{
 	font-size:3.5em;	
 }
-
+.geogr_font{
+	font-size:.7em;
+}
 .membersheep_wrapper{
 	width:100%;
 	background-color:#26252a;
@@ -334,11 +336,13 @@ transform: rotate(-135deg);
 	margin-right: 5%;
 }
 .img_atributes{
-	position:absolute;
+	position:relative;
 	top: -3rem;
 	left:40%;
 }
-
+.collapsed_element{
+	max-height:1px;
+}
 .partners_wrapper{
 	background-color:#26252a;
 	width:100%;
