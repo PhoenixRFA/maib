@@ -462,8 +462,42 @@ transform: rotate(-135deg);
 	top:-21rem;
 }
 
-.request_wrapper{
-	background-image:url(Images/requestbg.png);
+.event_images_wrapper .image-title {
+    padding: 8px 16px;
+    position: absolute;
+    width: calc(100% - 30px);
+    background: rgba(0, 0, 0, 0.6);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.event_images_wrapper .image-title .place {
+    font-size: 11px;
+    float: right;
+}
+
+.event_images_wrapper .image-title .date {
+    font-size: 11px;
+    float: left;
+}
+
+@media (max-width: 992px) {
+	.event_images_wrapper {
+		position: static;
+	}
+
+	.moving_row2 {
+		max-height: initial;
+		margin-top: -13rem;
+		top: 0;
+	}
+
+    #form-modal .modal-dialog {
+        max-width: 800px;
+    }
+}
+
+.request_wrapper {
+	background-image: url(Images/requestbg.png);
 }
 
 .custom_input{
@@ -739,10 +773,13 @@ form-modal {
   /*календарь*/
 .a-date{
 	padding: 0.1em !important;
-
 }
-#calTFooter{
-	display:none !important;
+.a-date.event {
+    cursor: pointer !important;
+}
+
+#calTFooter {
+	display: none !important;
 }
 
 #calTitle, #calTbody, #calendar {
@@ -851,4 +888,39 @@ form-modal {
 
 #addFile::after {
     vertical-align: 0.155em;
+}
+
+.calendar-card {
+    cursor: pointer;
+}
+
+.modal .modal-content {
+    background-color: #1e1d22;
+    background-image: url(/Images/modal-pattern.png);
+    background-repeat: no-repeat;
+    background-position: -210px -120px;
+}
+
+.modal .modal-title {
+	text-transform: uppercase;
+}
+
+.modal .modal-header {
+	border-bottom: 0;
+	padding: 80px 70px 0;
+}
+
+.modal .modal-body {
+	border-bottom: 0;
+	padding: 0 80px 70px;
+}
+
+.modal .close {
+	color: #fff;
+}
+
+.modal .modal-footer {
+	padding: 70px 80px;
+	border-top: none;
+	justify-content: space-between;
 }
