@@ -129,7 +129,7 @@ var calendar = (function() {
 
             if (i % 2 === 0) {
                 if(isRowOpen) html.push('</div></div></div>');
-                html.push('<div class="row"><div class="col-sm-12 col-6 event_images_wrapper"><div class="row">');
+                html.push('<div class="row"><div class="col-sm-12 col-lg-6 event_images_wrapper"><div class="row">');
                 isRowOpen = true;
             }
 
