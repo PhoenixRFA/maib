@@ -924,3 +924,7 @@ form-modal {
 	border-top: none;
 	justify-content: space-between;
 }
+
+#main-menu {
+    min-width: 150px;
+}
