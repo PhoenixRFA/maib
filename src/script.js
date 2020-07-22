@@ -15,7 +15,22 @@ $(document).ready(function () {
 
     $(document).on('click', '#sendForm', function (e) {
         e.preventDefault();
-        $('#fmain-form').submit();
+        var $form = $('#main-form');
+        var formData = new FormData($form[0]);
+        var url = $form.attr('action');
+
+        $.ajax({
+            url: url,
+            type: 'POST',
+            data: formData,
+            success: function (data) {
+                alert('Форма успешно отправлена');
+                $('#form-modal').modal('hide');
+            },
+            cache: false,
+            contentType: false,
+            processData: false
+        });
     });
 
     $(document).on('click', '#send-form-short', function (e) {
